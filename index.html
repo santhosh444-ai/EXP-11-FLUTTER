@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Lab - Experiment 11</title>
+    <style>
+        :root {
+            --primary-color: #02569B;
+            --secondary-color: #0175C2;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .important-note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+
+        ol {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        code {
+            background-color: #f1f3f5;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9em;
+            color: #d63384;
+        }
+
+        pre {
+            background-color: #f1f3f5;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+        pre code {
+            color: #212529;
+            padding: 0;
+            background: none;
+        }
+
+        .output-image-container {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .output-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: 1px solid #dee2e6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Flutter Development Lab Journal</h1>
+    </header>
+
+    <div class="container">
+        
+        <!-- Experiment Details -->
+        <div class="card">
+            <h2>EXPERIMENT 11 – ADD iOS AS A BUILD TARGET</h2>
+            
+            <div class="important-note">
+                <strong>Important:</strong> This experiment requires macOS + Xcode for actual iOS building and testing.
+            </div>
+
+            <h3>Procedure Steps</h3>
+            <ol>
+                <li><strong>Check Flutter Setup:</strong> Run <code>flutter doctor</code> in the terminal to verify the environment.</li>
+                <li><strong>Check Available Devices:</strong> Run <code>flutter devices</code> to see connected simulators/devices.</li>
+                <li><strong>Create Project:</strong> Generate a new application structure:
+                    <pre><code>flutter create ios_app\ncd ios_app</code></pre>
+                </li>
+                <li><strong>Open in Xcode:</strong> Launch the workspace file: <code>open ios/Runner.xcworkspace</code></li>
+                <li><strong>Select Target:</strong> Choose an active iOS Simulator inside the Xcode interface.</li>
+                <li><strong>Run Application:</strong> Launch using <code>flutter run</code> or directly via the Xcode interface.</li>
+                <li><strong>Test Application:</strong> Comprehensive verification of:
+                    <ul>
+                        <li>UI components</li>
+                        <li>Navigation and screen transitions</li>
+                        <li>Text fields, buttons, and images</li>
+                    </ul>
+                </li>
+                <li><strong>Build Project:</strong> Use the Flutter/Xcode workflow for the final iOS distribution package.</li>
+            </ol>
+        </div>
+
+        <!-- Expected Result & Output Image -->
+        <div class="card">
+            <h2>Expected Result & Output Screenshot</h2>
+            <p>The Flutter application successfully configures, targets, and renders correctly inside the target simulated screen layout enviornment.</p>
+            
+            <div class="output-image-container">
+                <!-- Replace 'screenshot.png' with the actual filename of your uploaded image -->
+                <img src="screenshot.png" alt="Experiment 11 Flutter Output Screenshot" class="output-image">
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Flutter Lab Reports</p>
+    </footer>
+
+</body>
+</html>
