@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flutter App Output</title>
+    <title>Flutter Lab - Experiment 11 Output</title>
     <style>
         * {
             box-sizing: border-box;
@@ -12,34 +12,80 @@
         }
 
         body {
-            background-color: #2f3e36; /* Matching the dark green background from your IDE window */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-        /* Simulating the iPhone 16 dimensions from your screenshot (393 x 852) */
-        .phone-container {
+        /* Top Blue Header Banner from your journal */
+        header {
+            background-color: #0076c6;
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            width: 100%;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Main Wrapper Card */
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            width: 100%;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            color: #00569b;
+            margin-bottom: 1.5rem;
+            align-self: flex-start;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #eef2f5;
+            width: 100%;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Embedded Device Simulation */
+        .phone-frame {
             width: 393px;
             height: 852px;
             background-color: #fffbfe;
+            border-radius: 12px;
             display: flex;
             flex-direction: column;
             position: relative;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border: 1px solid #dee2e6;
             overflow: hidden;
+            margin-top: 1rem;
         }
 
-        /* Flutter AppBar */
+        /* Flutter Purple AppBar */
         .app-bar {
-            background-color: #d1bbf2; /* Pastel purple header color */
+            background-color: #d1bbf2;
             height: 56px;
             display: flex;
             align-items: center;
             padding-left: 16px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
         }
 
         .app-bar-title {
@@ -48,8 +94,8 @@
             color: #1c1b1f;
         }
 
-        /* Main Content Body */
-        .content {
+        /* Flutter Content Body Area */
+        .app-content {
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -72,25 +118,19 @@
             color: #1c1b1f;
         }
 
-        /* Floating Action Button */
+        /* Floating Action Button (+) */
         .fab {
             position: absolute;
             bottom: 28px;
             right: 28px;
             width: 56px;
             height: 56px;
-            background-color: #e8def8; /* FAB color */
-            border-radius: 16px; /* Rounded square style used in newer Flutter versions */
+            background-color: #e8def8;
+            border-radius: 16px;
             display: flex;
             justify-content: center;
             align-items: center;
-            cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-            transition: background-color 0.2s;
-        }
-
-        .fab:hover {
-            background-color: #dccee7;
         }
 
         .fab-icon {
@@ -99,30 +139,52 @@
             font-weight: 300;
             user-select: none;
         }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Replicated Phone Canvas -->
-    <div class="phone-container">
-        
-        <!-- Flutter AppBar -->
-        <div class="app-bar">
-            <span class="app-bar-title">Flutter Demo Home Page</span>
-        </div>
+    <header>
+        Flutter Development Lab Journal
+    </header>
 
-        <!-- Center Counter Content -->
-        <div class="content">
-            <p class="info-text">You have pushed the button this many times:</p>
-            <h1 class="counter-value">34</h1>
-        </div>
+    <div class="container">
+        <div class="card">
+            <h2>EXPERIMENT 11 – ADD iOS AS A BUILD TARGET (OUTPUT)</h2>
+            
+            <!-- Replicated UI Mockup Area -->
+            <div class="phone-frame">
+                
+                <!-- AppBar -->
+                <div class="app-bar">
+                    <span class="app-bar-title">Flutter Demo Home Page</span>
+                </div>
 
-        <!-- Floating Action Button (+) -->
-        <div class="fab">
-            <span class="fab-icon">+</span>
-        </div>
+                <!-- Main Counter Display -->
+                <div class="app-content">
+                    <p class="info-text">You have pushed the button this many times:</p>
+                    <h1 class="counter-value">34</h1>
+                </div>
 
+                <!-- FAB -->
+                <div class="fab">
+                    <span class="fab-icon">+</span>
+                </div>
+
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Flutter Lab Reports</p>
+    </footer>
 
 </body>
 </html>
